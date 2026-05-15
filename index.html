@@ -332,11 +332,11 @@ Cocok untuk dipakai sehari-hari dengan tampilan premium dan harga jauh lebih hem
 <div class="price">
 
 <div class="old">
-Rp299.000
+Klik Pesan sekarang 
 </div>
 
 <div class="new">
-Rp99RB
+Cek out sekarang 
 </div>
 
 </div>
@@ -403,3 +403,23 @@ window.location.href =
 
 </body>
   </html>
+<script>
+
+fbq('track', 'ViewContent');
+
+function goShopee(){
+
+fbq('track', 'InitiateCheckout');
+
+fbq('track', 'Lead');
+
+setTimeout(function(){
+
+window.location.href =
+'https://s.shopee.co.id/70GtFRhWHi';
+
+},500);
+
+}
+
+</script>
